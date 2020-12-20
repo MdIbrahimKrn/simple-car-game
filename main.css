@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(255, 0, 255);
+}
+#section {
+  position: relative;
+}
+.game-scr {
+  position: absolute;
+  min-height: 40px;
+  min-width: 100px;
+  background-color: purple;
+  color: #fff;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+#game-area {
+  height: 100vh;
+  width: 400px;
+  border-left: dashed #fff;
+  border-right: dashed #fff;
+  background-color: #333;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+}
+button {
+  cursor: pointer;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    right top,
+    from(#fff),
+    to(rgb(204, 201, 201))
+  );
+  background-image: -o-linear-gradient(left bottom, #fff, rgb(204, 201, 201));
+  background-image: linear-gradient(to right top, #fff, rgb(204, 201, 201));
+}
+.game-btn {
+  min-height: 50px;
+  width: 300px;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: none;
+  outline: none;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+button:active {
+  background-image: -webkit-gradient(
+    linear,
+    right top,
+    left bottom,
+    from(#fff),
+    to(rgb(204, 201, 201))
+  );
+  background-image: -o-linear-gradient(right top, #fff, rgb(204, 201, 201));
+  background-image: linear-gradient(to left bottom, #fff, rgb(204, 201, 201));
+}
+.hide {
+  display: none;
+}
+.car,
+.animicars {
+  height: 90px;
+  width: 45px;
+  position: absolute;
+  top: 70%;
+  -webkit-transform: rotateZ(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotateZ(0deg);
+}
+.animicars {
+  background-image: url(img/car4.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+}
+.car {
+  background-image: url(img/car6.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+}
+.lines {
+  height: 100px;
+  width: 10px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  z-index: -1;
+}
